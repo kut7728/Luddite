@@ -4361,14 +4361,14 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -8.535565
-          outSlope: -8.535565
+          inSlope: -4.7770476
+          outSlope: -4.7770476
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.13130432
+          outWeight: 0.25531396
         - serializedVersion: 3
-          time: 0.25570947
+          time: 0.25386316
           value: 0
           inSlope: 0
           outSlope: 0
@@ -14558,7 +14558,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e9703a91f1221304689c7cd2f5b8e319, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18970,14 +18970,14 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -8.535565
-          outSlope: -8.535565
+          inSlope: -4.7770476
+          outSlope: -4.7770476
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.13130432
+          outWeight: 0.25531396
         - serializedVersion: 3
-          time: 0.25570947
+          time: 0.25386316
           value: 0
           inSlope: 0
           outSlope: 0
@@ -19447,7 +19447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7106726015495838947
 Transform:
   m_ObjectHideFlags: 0
@@ -24209,7 +24209,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 00d262aadad7e1f41bb73e2249b6c3fb, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24229,7 +24229,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_RenderMode: 5
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -28621,14 +28621,14 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -8.535565
-          outSlope: -8.535565
+          inSlope: -4.7770476
+          outSlope: -4.7770476
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.13130432
+          outWeight: 0.25531396
         - serializedVersion: 3
-          time: 0.25570947
+          time: 0.25386316
           value: 0
           inSlope: 0
           outSlope: 0

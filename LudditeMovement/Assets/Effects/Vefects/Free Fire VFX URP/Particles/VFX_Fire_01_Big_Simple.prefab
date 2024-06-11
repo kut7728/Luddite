@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7725773826809478306
 Transform:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.1
       minScalar: 2.5
       maxCurve:
         serializedVersion: 2
@@ -3822,7 +3822,7 @@ ParticleSystem:
       emitProbability: 1
   LightsModule:
     enabled: 1
-    ratio: 1
+    ratio: 0.05
     light: {fileID: 7552325380232887710, guid: 9f90aa15c6b14234ea7247f33f09e816, type: 3}
     randomDistribution: 1
     color: 1
@@ -4799,7 +4799,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_RenderMode: 5
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -9191,14 +9191,14 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -8.535565
-          outSlope: -8.535565
+          inSlope: -3.2277353
+          outSlope: -3.2277353
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.13130432
+          outWeight: 0.25531396
         - serializedVersion: 3
-          time: 0.25570947
+          time: 0.25386316
           value: 0
           inSlope: 0
           outSlope: 0
@@ -18833,14 +18833,14 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -8.535565
-          outSlope: -8.535565
+          inSlope: -4.7770476
+          outSlope: -4.7770476
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.13130432
+          outWeight: 0.25531396
         - serializedVersion: 3
-          time: 0.25570947
+          time: 0.25386316
           value: 0
           inSlope: 0
           outSlope: 0
