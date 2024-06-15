@@ -4,5 +4,29 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Scene_0_Intro.unity
+    guid: c7c8f7cf80b9c4c31aef3731134bedc9
+  - enabled: 1
+    path: Assets/Scenes/Scene_1_Main.unity
+    guid: 64b638203f763ff409bf148175fbc866
+  - enabled: 1
+    path: Assets/Scenes/Scene_2_Factory_Inside.unity
+    guid: c0b6490b03e94ab4d84efcb165f3b501
+  - enabled: 1
+    path: Assets/Scenes/Scene_2_Factory_Outside.unity
+    guid: 18c3780b28d84ca4e975f1040c934890
+  - enabled: 1
+    path: Assets/Scenes/Scene_4_Street.unity
+    guid: 4da670f7bf6ab4de8a4458c428fc64ba
+  - enabled: 1
+    path: Assets/Scenes/Scene_5_MainAgain.unity
+    guid: b1b5b03539fe2de43a431977e3c69cff
+  - enabled: 1
+    path: Assets/Scenes/Scene_6_Courtroom.unity
+    guid: ca0d8893db47f44c7951000db52c021b
+  - enabled: 1
+    path: Assets/Scenes/Scene_7_NeoLuddite.unity
+    guid: f7582994e5a74450c99e9833057e1f9f
   m_configObjects: {}
