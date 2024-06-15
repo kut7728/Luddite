@@ -2656,6 +2656,51 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!95 &237497870
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237497865}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &237497871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237497865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RigLayers:
+  - m_Rig: {fileID: 0}
+    m_Active: 1
+  m_Effectors:
+  - m_Transform: {fileID: 237497866}
+    m_Style:
+      shape: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
 --- !u!1001 &237907032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11584,8 +11629,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -45.50499, y: 2.7857552, z: 29.362202}
+  m_LocalRotation: {x: -0.017519405, y: -0.96597666, z: 0.12020083, w: -0.22832884}
+  m_LocalPosition: {x: -89.97, y: 13.07, z: 85.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17337,6 +17382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566966034}
   - component: {fileID: 1566966033}
+  - component: {fileID: 1566966035}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -17399,6 +17445,14 @@ Transform:
   - {fileID: 933188629}
   m_Father: {fileID: 237497866}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1566966035
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566966032}
+  m_Enabled: 1
 --- !u!1 &1583390450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 795df63ccfc920049b00501f43c470c0, type: 3}
@@ -19243,6 +19297,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6700875393691699969, guid: 41e2545f34576c946b934e01b536553e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.591
+      objectReference: {fileID: 0}
     - target: {fileID: 7742780737561719692, guid: 41e2545f34576c946b934e01b536553e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -19266,6 +19324,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41e2545f34576c946b934e01b536553e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 237497867}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41e2545f34576c946b934e01b536553e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 237497871}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41e2545f34576c946b934e01b536553e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 237497870}
   m_SourcePrefab: {fileID: 100100000, guid: 41e2545f34576c946b934e01b536553e, type: 3}
 --- !u!4 &1773046352 stripped
 Transform:
@@ -22370,10 +22434,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "19\uC138\uAE30 \uCD08."
+  m_text: "19\uC138\uAE30 \uCD08.\n\uC694\uD06C\uC154 \uC678\uACFD,\n\uACF5\uC7A5\uC9C0\uB300"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7dd08999b3d6d4d509906b69e1b830c6, type: 2}
-  m_sharedMaterial: {fileID: 448553047885457974, guid: 7dd08999b3d6d4d509906b69e1b830c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e37e8ab2ed0c274e9515a702ea5a590, type: 2}
+  m_sharedMaterial: {fileID: 448553047885457974, guid: 7e37e8ab2ed0c274e9515a702ea5a590, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
