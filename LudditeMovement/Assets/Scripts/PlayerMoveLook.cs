@@ -5,9 +5,10 @@ using UnityEngine;
 public class PlayerMoveLook : MonoBehaviour
 {
     public CharacterController controller;
+    public bool MouseDisabled = true;
 
 
-    public float speed = 50f;
+    public float speed = 10f;
     public float mouseSensitivity = 2f;
 
 
@@ -18,15 +19,14 @@ public class PlayerMoveLook : MonoBehaviour
 
     void Start()
     {
-        // controller = GetComponent<CharacterController>(); //이 스크립트가 붙는 오브제의 컴포넌트 불러옴
-        // Cursor.lockState = CursorLockMode.Locked;  // 게임 실행중 커서 숨기기
-        // Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
         Movement();
         CameraLook();
+        SwitchDetection();
     }
 
     void Movement()
@@ -63,6 +63,20 @@ public class PlayerMoveLook : MonoBehaviour
         playerTransform.Rotate(Vector3.up * mouseX);
         // vecvor3.up 은 Vector3(0, 1, 0) 과 동일
         // 마우스의 좌우 이동에 따라 본체(캡슐)의 y축 이동과 연결
+    }
+
+    void SwitchDetection()
+    {
+        if (Input.GetKeyDown(KeyCode.E)) {
+            if (MouseDisabled) {
+                Cursor.lockState = CursorLockMode.None;
+                MouseDisabled = false;
+            } else {
+                Cursor.lockState = CursorLockMode.Locked;
+                MouseDisabled = true;
+            }
+            
+        }
     }
 
 }
