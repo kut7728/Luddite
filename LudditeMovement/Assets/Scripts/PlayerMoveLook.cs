@@ -10,6 +10,9 @@ public class PlayerMoveLook : MonoBehaviour
 
     public float speed = 10f;
     public float mouseSensitivity = 2f;
+    public float gravity = -15f;
+    Vector3 velocity;
+    bool isGrounded;
 
 
     public Transform playerTransform;
@@ -37,10 +40,13 @@ public class PlayerMoveLook : MonoBehaviour
         float keyX = Input.GetAxis("Horizontal");
         float keyZ = Input.GetAxis("Vertical");      // 화살표나 wasd 로 움직이면 값이 바뀜
 
-        
+
         Vector3 move = playerTransform.right * keyX + playerTransform.forward * keyZ;
         // Debug.Log(move);
         controller.Move(move * speed * Time.deltaTime);   //deltatime은 컴퓨터의 처리속도에 맞추기 위해서 집어넣음, 한프레임 다음에 한프레임 처리 - 라는 느낌?
+        velocity.y += gravity * Time.deltaTime;
+
+        controller.Move(velocity * Time.deltaTime);
 
     }
 
@@ -56,7 +62,7 @@ public class PlayerMoveLook : MonoBehaviour
         xRotation -= mouseY;  //마우스의 상하 이동은 카메라 고개의 x축 이동과 연결됨
         xRotation = Mathf.Clamp(xRotation, -90f, 90f); //아무리 마우스를 확 움직여도 어느 정도만 시점이 바뀌도록 제한
 
-        cameraTransform.localEulerAngles = Vector3.right * xRotation;  
+        cameraTransform.localEulerAngles = Vector3.right * xRotation;
         //transform은 자기자신의 정보 가져옴, 따라서 카메라에 스크립트 넣어야 함, 로컬오일러 앵글은 유니티의 rotation 값
         // vertor3.right 는 Vector3(1, 0, 0,) 과 동일
 
@@ -67,15 +73,19 @@ public class PlayerMoveLook : MonoBehaviour
 
     void SwitchDetection()
     {
-        if (Input.GetKeyDown(KeyCode.E)) {
-            if (MouseDisabled) {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (MouseDisabled)
+            {
                 Cursor.lockState = CursorLockMode.None;
                 MouseDisabled = false;
-            } else {
+            }
+            else
+            {
                 Cursor.lockState = CursorLockMode.Locked;
                 MouseDisabled = true;
             }
-            
+
         }
     }
 
