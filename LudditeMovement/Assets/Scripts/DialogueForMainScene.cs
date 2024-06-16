@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class DialogueOnKeyPress : MonoBehaviour
+public class DialogueOnKeyPress2 : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText; // 텍스트메쉬프로 UI 텍스트
     public string[] dialogues=
