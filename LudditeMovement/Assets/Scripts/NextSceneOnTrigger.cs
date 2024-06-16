@@ -8,6 +8,7 @@ public class NextSceneOnTrigger : MonoBehaviour
 {
     public TextMeshProUGUI messageText; // 텍스트메시프로 UI 요소를 참조
     public string displayMessage = "Press Space to interact"; // 표시할 메시지
+    public GameObject dialogueUI; // 대화 UI 오브젝트
 
     private bool isPlayerInTrigger = false;
 
@@ -25,6 +26,7 @@ public class NextSceneOnTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInTrigger = true;
+            dialogueUI.SetActive(true);
             // 플레이어가 콜라이더에 들어오면 메시지를 표시합니다.
             if (messageText != null)
             {

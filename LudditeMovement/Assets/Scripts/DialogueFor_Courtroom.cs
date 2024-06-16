@@ -15,6 +15,8 @@ public class DialogueOnKeyPressCourtroom : MonoBehaviour
     }; // 대사 배열
     public AudioSource audioSource; // AudioSource 컴포넌트
     public AudioClip[] audioClips; // 재생할 오디오 클립 배열
+    public Animator[] npcAnimators; // NPC들의 Animator 컴포넌트 배열
+    public string npcTag = "NPC"; // NPC 오브젝트의 태그
 
     private int currentDialogueIndex = 0; // 현재 출력할 대사 인덱스
     private Coroutine clearTextCoroutine; // 텍스트 지우기 코루틴 참조
@@ -25,6 +27,7 @@ public class DialogueOnKeyPressCourtroom : MonoBehaviour
     {
         dialogueText.text = ""; // 초기화 시 텍스트를 빈 문자열로 설정
         dialogueUI.SetActive(false); // UI를 시작할 때 비활성화
+        AssignNPCAnimators(); // NPC 애니메이터 자동 할당
     }
 
     void Update()
@@ -60,11 +63,21 @@ public class DialogueOnKeyPressCourtroom : MonoBehaviour
                 // clearTextCoroutine = StartCoroutine(ClearTextAfterDelay(3f));
 
                 // 마지막 대사가 출력되었는지 확인
-                if (currentDialogueIndex >= 3)
+                if (currentDialogueIndex == 3)
                 {
-                    isLastDialogueDisplayed = true;
+                    
                     // 마지막 대사 출력 시 오디오 클립 재생 시작
                     StartCoroutine(PlayAudioClipsSequentially());
+                    isLastDialogueDisplayed = true;
+                }
+                if (currentDialogueIndex == 4)
+                {
+                    isLastDialogueDisplayed = false;
+                    PlayNPCAnimations();
+                }
+                if (currentDialogueIndex == 6)
+                {
+                    isLastDialogueDisplayed = true;
                 }
             }
         }
@@ -96,5 +109,27 @@ public class DialogueOnKeyPressCourtroom : MonoBehaviour
             audioSource.Play();
             yield return new WaitForSeconds(clip.length);
         }
+        
     }
+
+    void AssignNPCAnimators()
+    {
+        GameObject[] npcObjects = GameObject.FindGameObjectsWithTag(npcTag); // 태그를 가진 모든 NPC 오브젝트 찾기
+        npcAnimators = new Animator[npcObjects.Length];
+        for (int i = 0; i < npcObjects.Length; i++)
+        {
+            npcAnimators[i] = npcObjects[i].GetComponent<Animator>(); // Animator 컴포넌트 할당
+            npcAnimators[i].applyRootMotion = false; // 루트 모션 비활성화
+        }
+    }
+
+    void PlayNPCAnimations()
+    {
+        foreach (Animator animator in npcAnimators)
+        {
+            animator.SetTrigger("PlayAnimation"); // 애니메이션 트리거 설정 (애니메이션 이름은 필요에 따라 변경)
+        }
+    }
+
+    
 }
