@@ -31316,7 +31316,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "19\uC138\uAE30 \uCD08.\n\uC694\uD06C\uC154 \uC678\uACFD,\n\uACF5\uC7A5\uC9C0\uB300"
+  m_text: 'Early Of 19C.
+
+    Yorkshire CL,
+
+    Industrial Area'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
