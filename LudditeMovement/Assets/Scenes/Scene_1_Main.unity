@@ -1389,13 +1389,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1235430840}
     m_Modifications:
+    - target: {fileID: 534537950118838965, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 660970790140301363, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_Name
-      value: InteractionText
+      value: DialogueText
       objectReference: {fileID: 0}
     - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_text
-      value: "\uC2A4\uD398\uC774\uC2A4\uBC14\uB97C \uB20C\uB7EC  \uC0C1\uD638\uC791\uC6A9"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_fontSize
@@ -3159,7 +3163,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &237497871
+--- !u!114 &237497872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3168,21 +3172,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 237497865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8599140d2fa109542aabe9bf4e252c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RigLayers:
-  - m_Rig: {fileID: 0}
-    m_Active: 1
-  m_Effectors:
-  - m_Transform: {fileID: 237497866}
-    m_Style:
-      shape: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
-      color: {r: 1, g: 0, b: 0, a: 0.5}
-      size: 0.1
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0}
-    m_Visible: 1
+  dialogueText: {fileID: 106732658}
+  dialogues:
+  - "\uB098\uB294 \uB124\uB4DC \uB7EC\uB4DC\u2026"
+  - "\uC9C0\uAE08 \uB3D9\uB8CC\uB4E4\uACFC \uD568\uAED8 \uACF5\uC7A5\uC758 \uAE30\uACC4\uB4E4\uC744
+    \uAC00\uCC28\uC5C6\uC774 \uBD80\uC218\uACE0 \uC788\uB294 \uC911\uC774\uC57C."
+  - "\uB108\uB294 \uB0B4\uAC00 \uC65C \uC774\uB7F0 \uC9D3\uC744 \uBC8C\uC774\uB294\uC9C0
+    \uAD81\uAE08\uD558\uB2C8\u2026?"
+  - "\uB54C\uB294 \uC2DC\uAC04\uC744 \uAC70\uC2AC\uB7EC 6\uAC1C\uC6D4 \uC804\uC774\uC5C8\uC5B4\u2026."
 --- !u!1001 &237907032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26185,10 +26185,10 @@ PrefabInstance:
       addedObject: {fileID: 237497867}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41e2545f34576c946b934e01b536553e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 237497871}
+      addedObject: {fileID: 237497870}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41e2545f34576c946b934e01b536553e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 237497870}
+      addedObject: {fileID: 237497872}
   m_SourcePrefab: {fileID: 100100000, guid: 41e2545f34576c946b934e01b536553e, type: 3}
 --- !u!1 &1767086635 stripped
 GameObject:
