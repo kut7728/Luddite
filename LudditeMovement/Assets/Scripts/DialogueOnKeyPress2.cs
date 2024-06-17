@@ -20,7 +20,8 @@ public class DialogueOnKeyPress2 : MonoBehaviour
         "가차없이 부수고 있는 중이야.",
         "너는 내가 왜,",
         "이런 짓을 벌이는지 궁금하니…?",
-        "때는 시간을 거슬러 6개월 전이었어…."
+        "때는 시간을 거슬러 6개월 전이었어….",
+        "Spacebar를 눌러 다음씬으로 이동"
     };
 
     private int currentDialogueIndex = 0; // 현재 출력할 대사 인덱스
