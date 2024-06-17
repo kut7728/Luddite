@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 08d4df513d98847349418ecb3c120776, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -10337,7 +10337,6 @@ MonoBehaviour:
     \uC218 \uC788\uB294 \uC131\uC219\uD55C \uC0AC\uD68C\uAC00 \uB418\uAE30\uB97C
     \uAE30\uB3C4\uD560\uAC8C\u2026 "
   nextSceneName: Scene_8_Outro
-  delay: 3
 --- !u!4 &2123759120
 Transform:
   m_ObjectHideFlags: 0
