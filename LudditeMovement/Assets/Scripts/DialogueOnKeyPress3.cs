@@ -24,7 +24,9 @@ public class DialogueOnKeyPress3 : MonoBehaviour
         "오히려 기계를 소유한 자들과",
         "그들이 구축한 구조적인 모순에 대한",
         "저항이라고 볼 수 있어.",
-        "어때? 처음과는 조금 달라 보이지 않니?"
+        "어때? 처음과는 조금 달라 보이지 않니?",
+        "저기 관련 신문이 떨어져 있어.",
+        "한 번 클릭해서 읽어보자."
     };
 
     private int currentDialogueIndex = 0; // 현재 출력할 대사 인덱스
