@@ -12,7 +12,7 @@ public class DialogueOnKeyPress : MonoBehaviour
         "시민1:아이들의 노동착취를 중단하라!",
         "시민2:과도한 노동시간을 줄여라!",
         "시민3:인간적인 노동환경을 보장하라!",
-        "Space 버튼을 눌러 다음 씬 이동",
+        "Space 바를 눌러 다음 씬 이동",
     }; // 대사 배열
     private int currentDialogueIndex = 0; // 현재 출력할 대사 인덱스
     private Coroutine clearTextCoroutine; // 텍스트 지우기 코루틴 참조

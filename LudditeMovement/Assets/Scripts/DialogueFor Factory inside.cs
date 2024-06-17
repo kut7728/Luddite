@@ -15,7 +15,7 @@ public class DialogueOnKeyPressfac : MonoBehaviour
         "공장장: 올해도 역대급 실적이구만!",
         "증기기관이 도입된 이후 숙련공들을 해고하고 인건비를 많이 아꼈어..",
         "특히 어린아이들은 절반의 임금으로도 군말없이 일해준단 말이지..",
-        "Space 버튼을 눌러 다음 씬으로 이동",
+        "Space 바를 눌러 다음 씬으로 이동",
     }; // 대사 배열
     private int currentDialogueIndex = 0; // 현재 출력할 대사 인덱스
     private Coroutine clearTextCoroutine; // 텍스트 지우기 코루틴 참조

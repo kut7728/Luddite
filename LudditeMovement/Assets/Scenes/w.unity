@@ -2234,7 +2234,7 @@ MonoBehaviour:
   - "1799\uB144 \uB2E8\uACB0\uAE08\uC9C0\uBC95\uC744 \uC81C\uC815\uD558\uBA74\uC11C
     \uB178\uB3D9\uC790\uB4E4\uC744 \uB354\uC6B1 \uC2EC\uD558\uAC8C \uD0C4\uC555\uD558\uAE30
     \uC2DC\uC791\uD588\uC5B4.."
-  - "space \uBC84\uD2BC\uC744 \uB20C\uB7EC \uB2E4\uC74C \uC52C \uC774\uB3D9"
+  - "space \uBC14\uB97C \uB20C\uB7EC \uB2E4\uC74C \uC52C \uC774\uB3D9"
 --- !u!4 &467125916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4882033367719924, guid: d92775345cb637d4f8689dd48db97567, type: 3}
@@ -3384,13 +3384,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
+      propertyPath: m_fontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 7e37e8ab2ed0c274e9515a702ea5a590, type: 2}
     - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 448553047885457974, guid: 7e37e8ab2ed0c274e9515a702ea5a590, type: 2}
+    - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0

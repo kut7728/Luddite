@@ -16,7 +16,7 @@ public class DialogueOnKeyPressmansion : MonoBehaviour
         "거리로 나섰지만 투표권도 없는 그들의 목소리가 영국 의회에 닿는 일은 없었지..",
         "오히려 자본가들이 정치인들과 결탁하여 ",
         "1799년 단결금지법을 제정하면서 노동자들을 더욱 심하게 탄압하기 시작했어..",
-        "space 버튼을 눌러 다음 씬 이동",
+        "space 바를 눌러 다음 씬 이동",
     }; // 대사 배열
     private int currentDialogueIndex = 0; // 현재 출력할 대사 인덱스
     private Coroutine clearTextCoroutine; // 텍스트 지우기 코루틴 참조

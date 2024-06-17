@@ -2199,7 +2199,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &237497874
+--- !u!114 &237497870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2226,7 +2226,7 @@ MonoBehaviour:
     \uD574\uACE0\uD558\uACE0 \uC778\uAC74\uBE44\uB97C \uB9CE\uC774 \uC544\uAF08\uC5B4.."
   - "\uD2B9\uD788 \uC5B4\uB9B0\uC544\uC774\uB4E4\uC740 \uC808\uBC18\uC758 \uC784\uAE08\uC73C\uB85C\uB3C4
     \uAD70\uB9D0\uC5C6\uC774 \uC77C\uD574\uC900\uB2E8 \uB9D0\uC774\uC9C0.."
-  - "Space \uBC84\uD2BC\uC744 \uB20C\uB7EC \uB2E4\uC74C \uC52C\uC73C\uB85C \uC774\uB3D9"
+  - "Space \uBC14\uB97C \uB20C\uB7EC \uB2E4\uC74C \uC52C\uC73C\uB85C \uC774\uB3D9"
 --- !u!1001 &237907032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18184,7 +18184,7 @@ PrefabInstance:
       addedObject: {fileID: 237497867}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41e2545f34576c946b934e01b536553e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 237497874}
+      addedObject: {fileID: 237497870}
   m_SourcePrefab: {fileID: 100100000, guid: 41e2545f34576c946b934e01b536553e, type: 3}
 --- !u!4 &1773046352 stripped
 Transform:
@@ -20571,13 +20571,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
+      propertyPath: m_fontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 7e37e8ab2ed0c274e9515a702ea5a590, type: 2}
     - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 448553047885457974, guid: 7e37e8ab2ed0c274e9515a702ea5a590, type: 2}
+    - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
