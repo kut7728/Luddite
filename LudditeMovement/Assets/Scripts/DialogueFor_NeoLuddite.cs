@@ -27,6 +27,7 @@ public class DialogueFor_NeoLuddite : MonoBehaviour
     public string nextSceneName = "Scene_8_Outro"; // 전환할 다음 씬 이름
 
 
+
     void Start()
     {
         dialogueText.text = ""; // 초기화 시 텍스트를 빈 문자열로 설정
@@ -66,7 +67,7 @@ public class DialogueFor_NeoLuddite : MonoBehaviour
                 {
                     isLastDialogueDisplayed = true;
                     // 마지막 대사 출력 시 오디오 클립 재생 시작
-                    StartCoroutine(TransitionToNextSceneAfterDelay(3f));
+                    StartCoroutine(TransitionToNextSceneAfterDelay(6f));
 
                 }
             }

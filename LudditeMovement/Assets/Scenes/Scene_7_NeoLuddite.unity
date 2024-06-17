@@ -8753,6 +8753,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
+      propertyPath: m_fontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 912328946500743926, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6659386245538363944, guid: 80062d86b7fe445589f5c62bf0afe952, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -10328,10 +10336,8 @@ MonoBehaviour:
     \uC57D\uC790\uC758 \uD76C\uC0DD\uC5C6\uC774 \uC2E0\uAE30\uC220\uC744 \uBC1B\uC544\uB4E4\uC77C
     \uC218 \uC788\uB294 \uC131\uC219\uD55C \uC0AC\uD68C\uAC00 \uB418\uAE30\uB97C
     \uAE30\uB3C4\uD560\uAC8C\u2026 "
-  audioSource: {fileID: 277385385}
-  audioClips: []
-  npcTag: Null
-  animationTriggerName: PlayAnimation
+  nextSceneName: Scene_8_Outro
+  delay: 3
 --- !u!4 &2123759120
 Transform:
   m_ObjectHideFlags: 0
